@@ -1,5 +1,5 @@
-What is a compiler?
-Compiler is a computer software that translates (compiles) source code written in a high-level language (e.g., Java,C++) 
+Q1. What is a compiler?
+Solution : Compiler is a computer software that translates (compiles) source code written in a high-level language (e.g., Java,C++) 
 into a set of machine-language instructions that can be understood by a digital computer's CPU. 
 Compilers are very large programs, with error-checking and other abilities.
 
@@ -8,3 +8,38 @@ An interpreter is a program that executes instructions written in a high-level l
 Interpreters enable other programs to run on a computer or server. They process program code at run time, checking the code for errors line by line.
 An Interpreter directly executes instructions written in a programming or scripting language 
 without previously converting them to an object code or machine code. Examples of interpreted languages are Python.
+
+Q2. Define a class Student with following members:
+int roll, String name, float marks.
+input() to take input of the details
+display() to all details of a student.
+Write a program to which will store details of a student and print the details using the above
+
+Solution: public class Student
+{
+    private String name;
+    private int roll;
+    private float marks;
+    
+    public void input() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter student name: ");
+        name = in.nextLine();
+        System.out.print("Enter roll: ");
+        roll = in.nextInt();
+        System.out.print("Enter marks: ");
+        marks = in.nextInt();
+    }
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Roll: " + roll);
+        System.out.println("Marks " + marks);
+        
+    }
+    
+    public static void main(String args[]) {
+        Student obj = new Student();
+        obj.input();
+        obj.display();
+    }
+}
