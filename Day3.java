@@ -1,4 +1,4 @@
-Q3.Project done in the class i.e. Cab Fare Calculation.
+/* Q3.Project done in the class i.e. Cab Fare Calculation.*/
 package myproject;
 import java.util.Scanner;
 		class Cab {
